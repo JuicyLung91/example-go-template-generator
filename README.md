@@ -42,6 +42,10 @@ class SwagMyFancyEntityDefinition extends EntityDefinition
 Variables can be defined and accessed within templates. Here's how you can define and use variables:
 
 ```
+{{ .GlobalVariableName | SnakeCase }}
+
+//or static variables
+
 {{ $variable := "Hello, World!" }}
 {{ $variable }}
 ```
